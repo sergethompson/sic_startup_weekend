@@ -22,6 +22,18 @@ SicStartupWeekend::Application.configure do
   # Raise an error on page load if there are pending migrations
   config.active_record.migration_error = :page_load
 
+    # Ensure you have defined default url options in your environments files. Here 
+  #    is an example of default_url_options appropriate for a development environment 
+  #    in config/environments/development.rb:
+
+  #      config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  #    In production, :host should be set to the actual host of your application.
+
+
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
