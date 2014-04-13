@@ -83,7 +83,10 @@ SicStartupWeekend::Application.configure do
 
   config.action_mailer.default_url_options = { :host => 'creditspring.herokuapp.com' }
 
+
   config.serve_static_assets = true
+  config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
+  config.assets.compile = true
 
 
   # Disable automatic flushing of the log to improve performance.
