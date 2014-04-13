@@ -29,6 +29,8 @@ gem 'pry'
 
 gem 'faker'
 
+gem 'rails_12factor', group: :production
+
 #Use bootstrap
 
 gem 'twitter-bootstrap-rails'
