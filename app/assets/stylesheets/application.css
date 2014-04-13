@@ -275,5 +275,13 @@ button:active {
 }
 #brandcolor {
 	color: #068F23;
+	font-weight:bold;
 }
+.white {
+	background-color: white;
+	width: 804px;
+	margin: 0 auto;
+	padding-top: 20px;
+
+	}
 /*End Form style*/
