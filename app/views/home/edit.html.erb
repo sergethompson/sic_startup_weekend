@@ -2,22 +2,22 @@
 
 <%= form_for @profile, url: {action: "update"} do |f| %>
 
-  <%= f.label :name %>:
+  <%= f.label :name %>
   <%= f.text_field :name %><br />
 
-  <%= f.label :address %>:
+  <%= f.label :address %>
   <%= f.text_field :address %><br />
 
-  <%= f.label :city %>:
+  <%= f.label :city %>
   <%= f.text_field :city %><br />
 
-  <%= f.label :state %>:
+  <%= f.label :state %>
   <%= f.text_field :state %><br />
 
-  <%= f.label :email %>:
+  <%= f.label :email %>
   <%= f.text_field :email %><br />
 
-   <%= f.label :position %>:
+   <%= f.label :position %>
   <%= f.text_field :position %><br />
 
   <%= f.hidden_field :id %>

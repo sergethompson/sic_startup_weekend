@@ -8,17 +8,248 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *=require twitter-bootstrap-static/bootstrap
+ *=require twitter-bootstrap-static/fontawesome
  *= require_self
  *= require_tree .
  */
 
 
-
- .grass {
-	height: 100em;
-  background: url('meadow.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+/* Reset CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
 }
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;    
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+/*start new css --------------------------------------------------------------------------------------->>>>>>>>>>>*/
+
+.tableauPlaceholder {
+	margin-left:auto;
+	margin-right:auto;
+}
+.pace {
+	padding-bottom: 30px;
+}
+
+body{
+	background-color: #CCCCCC;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+#header{
+	width: 100%;
+	background-color: #FFFFFF;
+}
+#headerwrapper{
+	width: 960px;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+/*nav*/
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #068F23;
+	background:#fff;
+	background: rgba(255,255,255, 0.5); 
+}
+#menu li.active{
+	color: #595959;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+/*end nav*/
+#body{
+	background-image:url(background.JPG);
+	width: 100%;
+	clear:both;
+	min-height: 30em;
+	padding-bottom: 2em;
+}
+#bodywrapper{
+	width: 960px;
+	margin: 0 auto;
+	padding: 30px 0 30px 0;
+}
+#widgets{
+	clear:both;
+	background-color:#FFF;
+}
+#widgetswrapper{
+	width: 960px;
+	margin: 0 auto;
+	padding: 20px 0 20px 0;
+}
+#widget1{
+	width: 30%;
+	float:left;
+	background-color:#FFFFFF;
+	margin: 0 20px 20px 0;
+
+}
+#widget2{
+	width: 30%;
+	float:left;
+	background-color:#FFFFFF;
+	margin: 0 20px 20px 0;
+}
+#widget3{
+	width: 30%;
+	float:left;
+	background-color:#FFFFFF;
+	margin: 0 20px 20px 0;
+}
+#footer{
+	width: 100%;
+	background-color: #cccccc;
+	clear:both;
+}
+#footerwrapper{
+	width: 960px;
+	margin: 0 auto;
+	padding: 30px 0;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+h1{
+	color: #FFFFFF;
+	font-size:36px;
+	text-align:center;
+	font-style:italic;
+}
+h2{
+	color: #B81518;
+	font-size:24px;
+}
+p{
+	font-size: 14px;
+}
+/*begin form styling*/
+
+ input [type=text], input [type=password], input [type=submit], text area, button{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border: 1px solid #666;
+	background: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	padding: 0;
+	margin: 0;
+}
+ form* {
+	background: #FFFFFF;
+}
+label {
+		display:block;
+		margin-top: 14px;
+		color:#FFF;
+       font-size:18px;
+	   	float:left;
+		clear:left;
+	}
+input{
+		border:solid 1px #CCC;
+		padding: 5px;
+		margin: 5px 5px 0 0;
+		color:#666;
+		background: #ffffff;
+		float:left;
+		clear:left;
+		
+}
+textarea{
+		border:solid 1px #CCC;
+		padding: 5px;
+		margin: 5px 5px 0 0;
+		color:#666;
+		background: #ffffff;
+		float:left;
+		clear:left;
+		
+}
+button{
+	-moz-box-shadow:inset 0px 1px 0px 0px #fab3ad;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fab3ad;
+	box-shadow:inset 0px 1px 0px 0px #fab3ad;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fa665a), color-stop(1, #d34639) );
+	background:-moz-linear-gradient( center top, #fa665a 5%, #d34639 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fa665a', endColorstr='#d34639');
+	background-color:#fa665a;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #d83526;
+	display:block;
+	color:#ffffff;
+	font-size:15px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #98231a;
+	margin-top:24px;
+	float:left;
+	clear:left;
+}
+button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #d34639), color-stop(1, #fa665a) );
+	background:-moz-linear-gradient( center top, #d34639 5%, #fa665a 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d34639', endColorstr='#fa665a');
+	background-color:#d34639;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #999;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #999;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #999;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#999    ;
+}
+/*End Form style*/

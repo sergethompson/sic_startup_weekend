@@ -7,8 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="container">
-<p class="navbar-text pull-right">
+
+
+
+
+
+
+		<div id="header">
+			<p class="navbar-text pull-right">
 <% if user_signed_in? %>
   Logged in as <strong><%= current_user.email %></strong>.
   <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
@@ -20,9 +26,67 @@
 </p>
 
 
-		<p class="notice"><%= notice %></p>
-		<p class="alert"><%= alert %></p>
-		<%= yield %>
-	</div>
+
+	<div id="headerwrapper">
+    <div id="logo">
+        <%= image_tag("credit-spring-logo.png") %>
+    </div>
+    <nav id="menu">
+    <ul>
+    <li>HOME</li>
+    <li>ABOUT</li>
+    <li>CONTACT</li>
+    </ul>
+    </nav>
+    </div>
+</div>
+<div id="body">
+	<div id="bodywrapper">
+    <div>
+    <h1>Here to connect challenged borrowers with lenders that want to help.</h1>
+    </div>
+    <div>
+			<%= yield %>
+			
+    </div>
+    </div>	
+    <div style="clear:both"></div>
+</div>
+<div>
+<div id="widgets" class="whitebackground">
+	<div id="widgetswrapper">
+    	<div id="widget1" class="widget">
+        <h2>Info for lenders</h2>
+        <ul>
+        <li>Diversified Risk</li>
+        <li>High Returns</li>
+        <li>Quick turn around</li>
+        </ul>
+        </div>
+        <div id="widget2" class="widget">
+        <h2>Info for borrowers</h2>
+        <ul>
+        <li>Fix your credit</li>
+        <li>Get money quick</li>
+        <li>Better than payday loans</li>
+        </ul>
+        </div>
+        <div id="widget3" class="widget">
+        <h2>Rewards</h2>
+        <ul>
+        <li>Get giftcards when you pay back your loans.</li>
+        <li>Your loans are reported to the credit bureaus so your credit score improves.</li>
+        </ul>
+        </div>
+    </div>
+        <div style="clear:both"></div>
+</div>
+</div>
+<div id="footer">
+	<div id="footerwrapper">
+    <p>All rights reserved - 2014   |   We are gonna win @CreditSpring #GainGoodCredit</p>
+    </div>
+    <div style="clear:both"></div>
+</div>
 </body>
 </html>
