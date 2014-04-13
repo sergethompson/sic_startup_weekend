@@ -101,7 +101,7 @@ body{
 }
 /*end nav*/
 #body{
-	background-image:url(background.JPG);
+	background-image:url(meadow.jpg);
 	width: 100%;
 	clear:both;
 	min-height: 30em;
@@ -267,5 +267,10 @@ button:active {
 	float: left;
 	width: 45%;
 	margin: 20px 0;
+}
+
+#heading_text {
+	color: teal;
+	font-size: 40px;
 }
 /*End Form style*/

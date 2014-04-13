@@ -1,10 +1,10 @@
 
-<h1><strong>Step #2</strong></h1>
+<h1 id="heading_text"><strong>Step #2</strong></h1>
 <%= form_for @profile, url: {action: "create"} do |f| %>
-  <%= f.label :employee_number %>
+  <%= f.label :employee_number, "Employee Number" %>
   <%= f.text_field :employee_number %><br />
 
-  <%= f.label :SSN %>
+  <%= f.label :ssn, "SSN (last 4 digits)"  %>
   <%= f.text_field :ssn %><br />
 
   <%= f.submit %>
