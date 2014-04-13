@@ -25,6 +25,10 @@ gem 'jquery-rails'
 
 gem 'devise'
 
+gem 'pry'
+
+gem 'faker'
+
 #Use bootstrap
 
 gem 'twitter-bootstrap-rails'

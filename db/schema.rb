@@ -11,10 +11,44 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140412170911) do
+ActiveRecord::Schema.define(version: 20140412215221) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "loans", force: true do |t|
+    t.integer  "loan_id"
+    t.float    "original"
+    t.float    "owed"
+    t.float    "balance"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "loans_users", force: true do |t|
+    t.integer  "loan_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "profiles", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "employee_number"
+    t.string   "name"
+    t.string   "email"
+    t.string   "position"
+    t.string   "ssn"
+    t.string   "ein"
+    t.string   "address"
+    t.string   "city"
+    t.string   "state"
+    t.integer  "zip"
+    t.string   "facebook"
+    t.float    "score"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

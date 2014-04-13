@@ -1,0 +1,11 @@
+
+
+<%= form_for @profile, url: {action: "create"} do |f| %>
+  <%= f.label :employee_number %>:
+  <%= f.text_field :employee_number %><br />
+
+  <%= f.label :ssn %>:
+  <%= f.text_field :ssn %><br />
+
+  <%= f.submit %>
+<% end %>

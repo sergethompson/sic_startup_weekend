@@ -11,3 +11,14 @@
  *= require_self
  *= require_tree .
  */
+
+
+
+ .grass {
+	height: 100em;
+  background: url('meadow.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
