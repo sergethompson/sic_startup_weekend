@@ -269,8 +269,11 @@ button:active {
 	margin: 20px 0;
 }
 
-#heading_text {
-	color: teal;
+.heading_text {
+	color: #686868;
 	font-size: 46px;
+}
+#brandcolor {
+	color: #068F23;
 }
 /*End Form style*/
