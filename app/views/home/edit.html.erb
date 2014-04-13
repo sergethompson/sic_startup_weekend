@@ -1,26 +1,29 @@
-
+<h1><strong>Step #3</strong></h1>
 
 <%= form_for @profile, url: {action: "update"} do |f| %>
+<div id"sideone">
+	  <%= f.label :name %>
+	  <%= f.text_field :name %><br />
 
-  <%= f.label :name %>
-  <%= f.text_field :name %><br />
+	  <%= f.label :address %>
+	  <%= f.text_field :address %><br />
 
-  <%= f.label :address %>
-  <%= f.text_field :address %><br />
+	  <%= f.label :city %>
+	  <%= f.text_field :city %><br />
+ </div>
+ <div id"sidetwo">
 
-  <%= f.label :city %>
-  <%= f.text_field :city %><br />
+	  <%= f.label :state %>
+	  <%= f.text_field :state %><br />
 
-  <%= f.label :state %>
-  <%= f.text_field :state %><br />
+	  <%= f.label :email %>
+	  <%= f.text_field :email %><br />
 
-  <%= f.label :email %>
-  <%= f.text_field :email %><br />
+	   <%= f.label :position %>
+	  <%= f.text_field :position %><br />
 
-   <%= f.label :position %>
-  <%= f.text_field :position %><br />
-
-  <%= f.hidden_field :id %>
+	  <%= f.hidden_field :id %>
+  </div>
 
 
   <%= f.submit %>

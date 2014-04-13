@@ -60,6 +60,8 @@ abbr,acronym { border: 0;
 }
 /*start new css --------------------------------------------------------------------------------------->>>>>>>>>>>*/
 
+
+
 .tableauPlaceholder {
 	margin-left:auto;
 	margin-right:auto;
@@ -120,14 +122,14 @@ body{
 	padding: 20px 0 20px 0;
 }
 #widget1{
-	width: 30%;
+	width: 45%;
 	float:left;
 	background-color:#FFFFFF;
 	margin: 0 20px 20px 0;
 
 }
 #widget2{
-	width: 30%;
+	width: 45%;
 	float:left;
 	background-color:#FFFFFF;
 	margin: 0 20px 20px 0;
@@ -251,5 +253,19 @@ button:active {
 }
 :-ms-input-placeholder { /* Internet Explorer 10+ */
     color:#999    ;
+}
+
+#sideone {
+	display: inline-block;
+	float: left;
+	width: 45%;
+	margin: 20px 0;
+}
+
+#sidetwo {
+  display: inline-block;
+	float: left;
+	width: 45%;
+	margin: 20px 0;
 }
 /*End Form style*/

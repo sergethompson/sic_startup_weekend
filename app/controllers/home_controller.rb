@@ -12,17 +12,16 @@ class HomeController < ApplicationController
 
 		profile = Profile.create(user_params)
 		profile.user_id = current_user.id
-		profile.name = Faker::Name.name
+		profile.name = Faker::Name.first_name + " " + Faker::Name.last_name
 		profile.address = Faker::Address.street_address
 		profile.zip = Faker::Address.zip
-		profile.position = Faker::Commerce.department
+		profile.position = Faker::Name.title
 		profile.city = Faker::Address.city
 		profile.state = Faker::Address.state
 		profile.score = rand(1..10)
 
 		profile.email = current_user.email
 		profile.save
-		# binding.pry	
 
 			redirect_to edit_home_path(profile)
 			# redirect_to home_path
